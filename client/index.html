@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <form id="add-todo-form">
+        <input type="text" placeholder="Todo task" id="todo-input"/>
+        <input type="text" placeholder="Task description" id="todo-description"/>
+        <button type="submit">Add todo</button>
+      </form>
+    </main>
+
+    <section>
+      <h4>Yet todo</h4>
+      <ul id="pending-todos"></ul>
+    </section>
+    <section>
+      <h4>Todos done</h4>
+      <ul id="completed-todos"></ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
