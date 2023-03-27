@@ -67,8 +67,10 @@ function markTodoDone(id) {
 function addToList(item) {
   const li = document.createElement("li");
   li.classList.add("todo-item");
-  const task = (document.createElement("h5").value = item.task);
-  const desc = (document.createElement("p").value = item.description);
+  const task = document.createElement("h5");
+  task.innerText = item.task;
+  const desc = document.createElement("p");
+  desc.innerText = item.description;
   const doneBtn = document.createElement("button");
   doneBtn.innerText = "Done";
   const deleteBtn = document.createElement("button");
@@ -85,8 +87,10 @@ function addToList(item) {
 function addToCompletedList(item) {
   const li = document.createElement("li");
   li.classList.add("todo-item");
-  const task = (document.createElement("h5").value = item.task);
-  const desc = (document.createElement("p").value = item.description);
+  const task = document.createElement("h5");
+  task.innerText = item.task;
+  const desc = document.createElement("p");
+  desc.innerText = item.description;
 
   li.append(task, desc);
   completedList.appendChild(li);
